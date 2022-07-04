@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/doggoapp/static/css/main.f61ee834.css",
+    "main.js": "/doggoapp/static/js/main.ddc62423.js",
+    "index.html": "/doggoapp/index.html",
+    "main.f61ee834.css.map": "/doggoapp/static/css/main.f61ee834.css.map",
+    "main.ddc62423.js.map": "/doggoapp/static/js/main.ddc62423.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f61ee834.css",
+    "static/js/main.ddc62423.js"
+  ]
+}
