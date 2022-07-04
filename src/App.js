@@ -1,72 +1,22 @@
 import React, { Component } from "react"; 
 import './App.css';
-import M from "materialize-css";
-import "materialize-css/dist/css/materialize.min.css";
 import DogBreeds from "./components/DogsBreeds";
-
-
-
+import Breeds from "./components/Breeds";
+import Vote from "./components/Vote";
 
 class App extends Component{
-  // add(a,b){return a+b;}
-
-  state = {
-    visible: true
-  }
-
-  // handleVote = () => {
-  //   <Vote/>
-  // }
 
   render() {  
-    /*var add = (a,b) => a+b;*/
-    // let slider = this.state.visible ? (<Imageloder/>) : (<div>This is hidden</div>);
-
-    // if(!this.state.visible){
-    //   slider = <div>display nothing</div>;
-    // }
-
-    // const buttonText = this.state.visible ? 'hide' : 'show';
     
     return(
     <div className="App">
-    <div  class="col s12">
-      <ul style={{backgroundColor: "black"}} class="tabs">
-        {/* <li class="tab col s3"><a class="active" href="#test1">VOTE</a></li> */}
-        <li class="tab col s3"><a class="active" href="#test2">BREEDS</a></li>
-        {/* <li class="tab col s3"><a class="active" href="#test3">IMAGES/SEARCH</a></li>
-        <li class="tab col s3"><a class="active" href="#test4">FAVOURITES</a></li>
-        <li class="tab col s3"><a class="active" href="#test4">UPLOAD</a></li> */}
-      </ul>
-    </div>
-
-    
-    <div id="test1" class="col s12">{<DogBreeds/>}</div>
-  
-      {/* <Header title={"Hello Bro"} num={10}
-      myArr = {[2,4,6]}
-      myFunc = {this.add}
-      myObj = {{
-        a: 90,
-        b: 80
-      }}/>
-
-      <Body2/>
-      <Body3/>
-      <Body text={"are sahi hai bhai ye functional component"} text2={"dekh ye 2nd text"} myFunc={this.add}/>
-      <Counter initialCount={0}/>
-      <Counter initialCount={10}/> */}
-
-      {/* {slider}
-
-      <button onClick={()=>{
-        this.setState({visible: !this.state.visible});
-      }}>
-        {buttonText}
-      </button> */}
-
-      {/* <MyForm/> */}
+      <div className='rowC' style={{backgroundColor: "black"}}>
+        <button style={{backgroundColor: "black", color: "pink", height: "50%", margin: "auto", padding: 15}}>VOTES</button>
+        <button style={{backgroundColor: "black", color: "pink", height: "50%", margin: "auto", padding: 15}}>BREEDS</button>
       
+      </div>
+    
+    <div id="test1" class="col s12">{<Breeds/>}</div>
     </div>
   
 );
