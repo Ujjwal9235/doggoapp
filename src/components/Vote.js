@@ -9,7 +9,7 @@ export default class Vote extends Component{
 
     async componentDidMount(){
 
-        const url = "https://api.thedogapi.com/v1/images/search"
+        const url = "https://api.thedogapi.com/v1/images/search?api_key=a75dc5be-ed7a-4ea0-9c74-10ed2648c2bf"
         const response = await fetch(url);
         const data = await response.json();
         this.setState({dogo: data[0], loading: false,dogobreeds: data[0].breeds[0]})
@@ -19,18 +19,15 @@ export default class Vote extends Component{
 
     render() {
         return (
+            
         <div>{
-            this.state.loading || !this.state.dogo ? (<div>loading...</div>) : (<div>
-                <img style={{maxHeight: "40%",maxWidth: "80%"}} src = {this.state.dogo.url}/>
-                <div style={{fontSize: 38,fontFamily: "sans-serif", fontWeight: "bold"}}>{this.state.dogobreeds.name}</div>
-                <div style={{fontWieght: "bold"}}>id: {this.state.dogobreeds.id}</div>
-                <div>---</div>
-                <div style={{fontStyle: "italic"}}>{this.state.dogobreeds.bred_for}</div>
-                <div >{this.state.dogobreeds.life_span} average life span</div>
-                <div >{this.state.dogobreeds.life_span}</div>
-                <div >{this.state.dogobreeds.life_span}</div>
-                <div >{this.state.dogobreeds.temperament}</div>
-                </div>)}</div>
+            this.state.loading || !this.state.dogo ? (<div>loading...</div>) : (
+            <div>
+                
+                <img margin='12px' height='500px' src = {this.state.dogo.url}/>
+                <div style={{fontSize: 38,fontFamily: "cursive", fontWeight: "bold"}}>{this.state.dogobreeds.name}</div>
+            </div>)}
+        </div>
         );
     }
 }
