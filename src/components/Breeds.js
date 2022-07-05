@@ -13,12 +13,12 @@ const Breeds = () => {
             // }
         }).then(resp => resp.json())
         .then(data => {
-            for(let element in data) {
-                const {name, image, id, temperament, origin, weight, height, life_span} = element // Destructuring as objects
+            data.forEach(i => {
+                const {name, image, id, temperament, origin, weight, height, life_span} = i // Destructuring as objects
                 breedNames.push({name, label: name, url: image.url, id: id, temperament: temperament, origin: origin, metricw: weight.metric, metrich: height.metric, life_span: life_span})
                 setOptions(breedNames)
 
-            }
+            });
             
         })
     

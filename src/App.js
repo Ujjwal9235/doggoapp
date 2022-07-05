@@ -28,10 +28,10 @@ class App extends Component{
       </div>
       <br/>
       <div className="rowC" style={{}}>
-        <button style={{backgroundColor: "green", height: "50px", width: "200px",marginLeft:"30%", fontSize:"120%"}}>
+        <button style={{backgroundColor: "green", height: "50px", width: "200px",marginLeft:"35%", fontSize:"120%"}}>
           <FaThumbsUp/> Like
         </button>
-        <button style={{backgroundColor: "red", height: "50px", width: "200px",marginRight:"30%", fontSize:"120%"}}>
+        <button style={{backgroundColor: "red", height: "50px", width: "200px",marginRight:"35%", fontSize:"120%"}}>
           <FaThumbsDown/> DisLike
         </button>
       </div>
