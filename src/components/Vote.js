@@ -13,7 +13,6 @@ export default class Vote extends Component{
         const response = await fetch(url);
         const data = await response.json();
         this.setState({dogo: data[0], loading: false,dogobreeds: data[0].breeds[0]})
-        //console.log(data)
 
     }
 

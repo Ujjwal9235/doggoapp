@@ -13,12 +13,12 @@ const Breeds = () => {
             // }
         }).then(resp => resp.json())
         .then(data => {
-            data.forEach(element => {
-                const {name, image, id, temperament, origin, weight, height, life_span} = element 
+            for(let element in data) {
+                const {name, image, id, temperament, origin, weight, height, life_span} = element // Destructuring as objects
                 breedNames.push({name, label: name, url: image.url, id: id, temperament: temperament, origin: origin, metricw: weight.metric, metrich: height.metric, life_span: life_span})
                 setOptions(breedNames)
 
-            });
+            }
             
         })
     
@@ -36,7 +36,7 @@ const Breeds = () => {
           onChange={changeHandler}
         />
         <br/>
-        <img margin='12px' height='500px' src={selectedBreed.url}/>
+        <img margin='12px' height='500px' src={selectedBreed.url} alt="Please select the dog name above"/>
         <div style={{fontSize: 38,fontFamily: "cursive", fontWeight: "bold"}}>{selectedBreed.name}</div>
         <div style={{fontWeight: "bold"}}>id: {selectedBreed.id}</div>
         <div>---</div>
