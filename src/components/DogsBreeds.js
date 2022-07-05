@@ -15,7 +15,6 @@ const DogBreeds = () => {
     }).then(resp => resp.json())
     .then(data => {
         breedNames = data.filter(i => breedNames.push(i.name))
-        breedImgaes = data.filter(i => breedImgaes.push(i.image.url))
         setOptions(breedNames.map(b => ({value: b.name, label: b.name})))
         setIm(breedImgaes.map(b=>({value: b.image.url, label: b.image.url})))
         
