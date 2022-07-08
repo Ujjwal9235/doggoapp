@@ -12,10 +12,11 @@ const Breeds = () => {
             //     api_key:'a75dc5be-ed7a-4ea0-9c74-10ed2648c2bf'
             // }
         }).then(resp => resp.json())
+        
         .then(data => {
             data.forEach(i => {
                 const {name, image, id, temperament, origin, weight, height, life_span} = i // Destructuring as objects
-                breedNames.push({name, label: name, url: image.url, id: id, temperament: temperament, origin: origin, metricw: weight.metric, metrich: height.metric, life_span: life_span})
+                breedNames.push({name: name, label: name, url: image.url, id: id, temperament: temperament, origin: origin, metricw: weight.metric, metrich: height.metric, life_span: life_span})
                 setOptions(breedNames)
 
             });
@@ -23,20 +24,22 @@ const Breeds = () => {
         })
     
     }, [])
+    
 
 
     const changeHandler = (e) => {
         seSselectedBreed(e)
     }
-
     return (
     <>
+    
     <Select
           options={options}
           onChange={changeHandler}
-        />
+          
+        >{console.log("dekh isko")}</Select>
         <br/>
-        <img margin='12px' height='500px' src={selectedBreed.url} alt="Please select the dog name above"/>
+        <img margin='5%' height='40%' width='40%' src={selectedBreed.url} alt="Please select the dog name above"/>
         <div style={{fontSize: 38,fontFamily: "cursive", fontWeight: "bold"}}>{selectedBreed.name}</div>
         <div style={{fontWeight: "bold"}}>id: {selectedBreed.id}</div>
         <div>---</div>
