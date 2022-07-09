@@ -25,7 +25,7 @@ const Vote = () => {
 
     return (
         <div >
-            <img margin='5%' height='50%' width='40%' src={dogo}/>
+            <img margin='1%' height='80%' width='60%' src={dogo}/>
             <br/>
             <div style={{fontSize: 38,fontFamily: "cursive", fontWeight: "bold"}}>{dogon}</div>
         <br/>

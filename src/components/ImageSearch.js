@@ -61,7 +61,7 @@ render(){
       <br/>
     <div style={{marginTop: 30, display: "flex", justifyContent: "space-evenly", flexWrap: "wrap"}} >
         <div>
-        {this.state.dogs.map((e) => {
+        {this.state.dogs.reverse().map((e) => {
             return (
                 <DogsBreeds name= {e.name}imgu= {e.image.url}/>
             )
