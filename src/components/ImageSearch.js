@@ -17,6 +17,18 @@ export default class ImageSearch extends Component {
         this.setState({dogs: data});
         console.log(data);
     }
+
+    // decOrder(){
+    //     this.setState(this.state.dogs.sort(function(a,b){return b.name-a.name}).map((e) => {
+    //         return (
+    //             <DogsBreeds name= {e.name} imgu = {e.image.url}/>
+    //         )
+    //     }))
+    // }
+
+    // ascOrder(){
+
+    // }
 render(){
     if(this.state.isase === "asec")
     {
@@ -49,7 +61,7 @@ render(){
       <br/>
     <div style={{marginTop: 30, display: "flex", justifyContent: "space-evenly", flexWrap: "wrap"}} >
         <div>
-        {this.state.dogs.reverse().map((e) => {
+        {this.state.dogs.map((e) => {
             return (
                 <DogsBreeds name= {e.name}imgu= {e.image.url}/>
             )
