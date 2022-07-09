@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/doggoapp/static/css/main.f61ee834.css",
-    "main.js": "/doggoapp/static/js/main.ddc62423.js",
+    "main.css": "/doggoapp/static/css/main.a40231e5.css",
+    "main.js": "/doggoapp/static/js/main.da0f1353.js",
     "index.html": "/doggoapp/index.html",
-    "main.f61ee834.css.map": "/doggoapp/static/css/main.f61ee834.css.map",
-    "main.ddc62423.js.map": "/doggoapp/static/js/main.ddc62423.js.map"
+    "main.a40231e5.css.map": "/doggoapp/static/css/main.a40231e5.css.map",
+    "main.da0f1353.js.map": "/doggoapp/static/js/main.da0f1353.js.map"
   },
   "entrypoints": [
-    "static/css/main.f61ee834.css",
-    "static/js/main.ddc62423.js"
+    "static/css/main.a40231e5.css",
+    "static/js/main.da0f1353.js"
   ]
 }
