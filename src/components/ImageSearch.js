@@ -17,18 +17,6 @@ export default class ImageSearch extends Component {
         this.setState({dogs: data});
         console.log(data);
     }
-
-    // decOrder(){
-    //     this.setState(this.state.dogs.sort(function(a,b){return b.name-a.name}).map((e) => {
-    //         return (
-    //             <DogsBreeds name= {e.name} imgu = {e.image.url}/>
-    //         )
-    //     }))
-    // }
-
-    // ascOrder(){
-
-    // }
 render(){
     if(this.state.isase === "asec")
     {
